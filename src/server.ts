@@ -29,8 +29,8 @@ app.set("views", "./views");
 db.connect();
 
 app.get("/", (req: any, res: any) => {
-   res.sendFile(__dirname + '/index.html');
-   res.render("trangchu.ejs");
+//   res.sendFile(__dirname + '/index.html');
+//   res.render("trangchu.ejs");
    res.render("test.ejs");
 });
 
