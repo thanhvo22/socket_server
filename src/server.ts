@@ -28,11 +28,11 @@ app.set("view engine", "ejs");
 app.set("views", "./views");
 db.connect();
 
-// app.get("/", (req: any, res: any) => {
-//   // res.sendFile(__dirname + '/index.html');
-//   // res.render("trangchu.ejs");
-//   res.render("test.ejs");
-// });
+app.get("/", (req: any, res: any) => {
+   res.sendFile(__dirname + '/index.html');
+   res.render("trangchu.ejs");
+   res.render("test.ejs");
+});
 
 // io.on('connection', (socket) => {
 //   console.log("co nguoi da ket noi", socket.id);
