@@ -8,7 +8,7 @@ import { sendMail } from "../config/sendMail.config";
 
 dotenv.config();
 
-export const authController = {
+const authController = {
   getLogin: (req: Request, res: Response) => {
     res.render("auth/login.pug");
   },
@@ -98,7 +98,7 @@ export const authController = {
     console.log("updatePassword", account);
     const {passOld, passNew, passFinal} = req.body;
     console.log(passOld, passNew, passFinal);
-    if(passOld!== account.pass){
+    if(passOld!== account?.pass){
       
       res.status(403).json({
         message:"Pass false"
@@ -120,3 +120,6 @@ export const authController = {
     res.redirect("/auth/login");
   },
 };
+
+
+export default authController

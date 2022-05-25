@@ -1,4 +1,4 @@
-import * as express from "express";
+const express = require("express");
 import { Request, Response } from "express";
 import messageModel from "../models/message.model";
 

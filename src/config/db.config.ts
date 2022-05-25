@@ -1,7 +1,4 @@
 
-import * as dotenv from "dotenv";
-require("dotenv").config();
-
 const mongoose = require("mongoose");
 async function connect() {
   try {

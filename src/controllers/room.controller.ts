@@ -1,5 +1,5 @@
 import roomModel from "../models/room.model";
-import * as express from "express";
+const express = require("express");
 import { Request, Response } from "express";
 var app = express();
 var server = require("http").Server(app);
